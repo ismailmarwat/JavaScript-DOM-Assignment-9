@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Users from JSONPlaceholder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Users Directory</h1>
+
+    <div class="controls">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search by name..." 
+        autocomplete="off"
+      >
+      <button id="reloadBtn">Reload Data</button>
+    </div>
+
+    <div id="loading" class="message">Loading...</div>
+    <div id="error" class="message error hidden">Failed to fetch data</div>
+
+    <ul id="userList"></ul>
+
+    <div id="userDetail" class="user-detail hidden">
+      <h2 id="detailName"></h2>
+      <p><strong>Email:</strong> <span id="detailEmail"></span></p>
+      <p><strong>Phone:</strong> <span id="detailPhone"></span></p>
+      <p><strong>Website:</strong> <a id="detailWebsite" target="_blank"></a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
